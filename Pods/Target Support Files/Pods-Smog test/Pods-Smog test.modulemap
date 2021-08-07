@@ -1,0 +1,6 @@
+framework module Pods_Smog_test {
+  umbrella header "Pods-Smog test-umbrella.h"
+
+  export *
+  module * { export * }
+}
