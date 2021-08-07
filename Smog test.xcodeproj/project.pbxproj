@@ -3,27 +3,65 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		388C3BD526BE7355008BF853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3BD426BE7355008BF853 /* AppDelegate.swift */; };
-		388C3BD726BE7355008BF853 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3BD626BE7355008BF853 /* SceneDelegate.swift */; };
-		388C3BD926BE7355008BF853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3BD826BE7355008BF853 /* ViewController.swift */; };
-		388C3BDC26BE7355008BF853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388C3BDA26BE7355008BF853 /* Main.storyboard */; };
 		388C3BDE26BE7355008BF853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 388C3BDD26BE7355008BF853 /* Assets.xcassets */; };
 		388C3BE126BE7355008BF853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388C3BDF26BE7355008BF853 /* LaunchScreen.storyboard */; };
+		388C3BEB26BE7441008BF853 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3BEA26BE7441008BF853 /* AppCoordinator.swift */; };
+		388C3BF326BE7696008BF853 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3BF226BE7696008BF853 /* Coordinator.swift */; };
+		388C3BF726BE76BC008BF853 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3BF626BE76BC008BF853 /* Router.swift */; };
+		388C3BFA26BE76DF008BF853 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3BF926BE76DF008BF853 /* Presentable.swift */; };
+		388C3BFD26BE772E008BF853 /* UIExecutableAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3BFC26BE772E008BF853 /* UIExecutableAlertAction.swift */; };
+		388C3C0B26BE78B0008BF853 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C0A26BE78B0008BF853 /* Configuration.swift */; };
+		388C3C0F26BE78EE008BF853 /* RequestManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C0E26BE78EE008BF853 /* RequestManger.swift */; };
+		388C3C1226BE7944008BF853 /* SmogError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C1126BE7944008BF853 /* SmogError.swift */; };
+		388C3C1926BE7AC9008BF853 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C1826BE7AC9008BF853 /* UserRepository.swift */; };
+		388C3C2326BE8126008BF853 /* MeasuringStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C2226BE8126008BF853 /* MeasuringStation.swift */; };
+		388C3C2626BE85D7008BF853 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C2526BE85D7008BF853 /* UserApi.swift */; };
+		388C3C2A26BEA4E9008BF853 /* StationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C2926BEA4E9008BF853 /* StationListViewController.swift */; };
+		388C3C3626BEA547008BF853 /* StationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C3526BEA547008BF853 /* StationListViewModel.swift */; };
+		388C3C7226BEC01B008BF853 /* AppDelegate+AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C7126BEC01B008BF853 /* AppDelegate+AppAppearance.swift */; };
+		388C3C7F26BEEA19008BF853 /* StationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C7E26BEEA19008BF853 /* StationListView.swift */; };
+		388C3C8626BEECAE008BF853 /* StationListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C8526BEECAE008BF853 /* StationListTableViewCell.swift */; };
+		388C3C8E26BEFC7B008BF853 /* StationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C8D26BEFC7B008BF853 /* StationDetailsView.swift */; };
+		388C3C9226BEFCBD008BF853 /* StationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C9126BEFCBD008BF853 /* StationDetailsViewController.swift */; };
+		388C3C9726BEFFDE008BF853 /* StationDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C9626BEFFDE008BF853 /* StationDetailsViewModel.swift */; };
+		388C3C9A26BF010F008BF853 /* AirQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388C3C9926BF010F008BF853 /* AirQuality.swift */; };
+		D6F77B97F5FFB37755DE4943 /* Pods_Smog_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B473DF89A10A59935FB50D4 /* Pods_Smog_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AC9B69ADDD9E32E10285275 /* Pods-Smog test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smog test.release.xcconfig"; path = "Target Support Files/Pods-Smog test/Pods-Smog test.release.xcconfig"; sourceTree = "<group>"; };
 		388C3BD126BE7355008BF853 /* Smog test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smog test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		388C3BD426BE7355008BF853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		388C3BD626BE7355008BF853 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		388C3BD826BE7355008BF853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		388C3BDB26BE7355008BF853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		388C3BDD26BE7355008BF853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		388C3BE026BE7355008BF853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		388C3BE226BE7355008BF853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		388C3BEA26BE7441008BF853 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		388C3BF226BE7696008BF853 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		388C3BF626BE76BC008BF853 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		388C3BF926BE76DF008BF853 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		388C3BFC26BE772E008BF853 /* UIExecutableAlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExecutableAlertAction.swift; sourceTree = "<group>"; };
+		388C3C0A26BE78B0008BF853 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		388C3C0E26BE78EE008BF853 /* RequestManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManger.swift; sourceTree = "<group>"; };
+		388C3C1126BE7944008BF853 /* SmogError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmogError.swift; sourceTree = "<group>"; };
+		388C3C1826BE7AC9008BF853 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		388C3C2226BE8126008BF853 /* MeasuringStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuringStation.swift; sourceTree = "<group>"; };
+		388C3C2526BE85D7008BF853 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		388C3C2926BEA4E9008BF853 /* StationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewController.swift; sourceTree = "<group>"; };
+		388C3C3526BEA547008BF853 /* StationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewModel.swift; sourceTree = "<group>"; };
+		388C3C7126BEC01B008BF853 /* AppDelegate+AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+AppAppearance.swift"; sourceTree = "<group>"; };
+		388C3C7E26BEEA19008BF853 /* StationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListView.swift; sourceTree = "<group>"; };
+		388C3C8526BEECAE008BF853 /* StationListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListTableViewCell.swift; sourceTree = "<group>"; };
+		388C3C8D26BEFC7B008BF853 /* StationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailsView.swift; sourceTree = "<group>"; };
+		388C3C9126BEFCBD008BF853 /* StationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailsViewController.swift; sourceTree = "<group>"; };
+		388C3C9626BEFFDE008BF853 /* StationDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailsViewModel.swift; sourceTree = "<group>"; };
+		388C3C9926BF010F008BF853 /* AirQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQuality.swift; sourceTree = "<group>"; };
+		4B473DF89A10A59935FB50D4 /* Pods_Smog_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smog_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A015C26CD8EB47ACB054CE /* Pods-Smog test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smog test.debug.xcconfig"; path = "Target Support Files/Pods-Smog test/Pods-Smog test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +69,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F77B97F5FFB37755DE4943 /* Pods_Smog_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26BF34873DED123A7FC5EC74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1A015C26CD8EB47ACB054CE /* Pods-Smog test.debug.xcconfig */,
+				2AC9B69ADDD9E32E10285275 /* Pods-Smog test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		388C3BC826BE7355008BF853 = {
 			isa = PBXGroup;
 			children = (
 				388C3BD326BE7355008BF853 /* Smog test */,
 				388C3BD226BE7355008BF853 /* Products */,
+				26BF34873DED123A7FC5EC74 /* Pods */,
+				630F5C765DAB7B3C2A292D34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +106,168 @@
 		388C3BD326BE7355008BF853 /* Smog test */ = {
 			isa = PBXGroup;
 			children = (
+				388C3C7026BEBFDD008BF853 /* Extensions */,
+				388C3C0026BE77CA008BF853 /* Data */,
+				388C3BF126BE766D008BF853 /* Router */,
+				388C3BE926BE7400008BF853 /* Flows */,
 				388C3BD426BE7355008BF853 /* AppDelegate.swift */,
-				388C3BD626BE7355008BF853 /* SceneDelegate.swift */,
-				388C3BD826BE7355008BF853 /* ViewController.swift */,
-				388C3BDA26BE7355008BF853 /* Main.storyboard */,
 				388C3BDD26BE7355008BF853 /* Assets.xcassets */,
 				388C3BDF26BE7355008BF853 /* LaunchScreen.storyboard */,
 				388C3BE226BE7355008BF853 /* Info.plist */,
 			);
 			path = "Smog test";
+			sourceTree = "<group>";
+		};
+		388C3BE926BE7400008BF853 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C8A26BEFBA7008BF853 /* Main Flow */,
+				388C3BEA26BE7441008BF853 /* AppCoordinator.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		388C3BF126BE766D008BF853 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				388C3BF626BE76BC008BF853 /* Router.swift */,
+				388C3BF226BE7696008BF853 /* Coordinator.swift */,
+				388C3BF926BE76DF008BF853 /* Presentable.swift */,
+				388C3BFC26BE772E008BF853 /* UIExecutableAlertAction.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		388C3C0026BE77CA008BF853 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C0826BE7825008BF853 /* Repositories */,
+				388C3C0726BE780B008BF853 /* Networking */,
+				388C3C0126BE77D8008BF853 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		388C3C0126BE77D8008BF853 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C2226BE8126008BF853 /* MeasuringStation.swift */,
+				388C3C9926BF010F008BF853 /* AirQuality.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		388C3C0726BE780B008BF853 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C0926BE786E008BF853 /* APIs */,
+				388C3C0A26BE78B0008BF853 /* Configuration.swift */,
+				388C3C0E26BE78EE008BF853 /* RequestManger.swift */,
+				388C3C1126BE7944008BF853 /* SmogError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		388C3C0826BE7825008BF853 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C1826BE7AC9008BF853 /* UserRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		388C3C0926BE786E008BF853 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C2526BE85D7008BF853 /* UserApi.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		388C3C2826BEA345008BF853 /* Station List */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C8326BEEC3C008BF853 /* ViewComponents */,
+				388C3C8226BEEC03008BF853 /* ViewModel */,
+				388C3C8126BEEBEC008BF853 /* View */,
+			);
+			path = "Station List";
+			sourceTree = "<group>";
+		};
+		388C3C7026BEBFDD008BF853 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C7126BEC01B008BF853 /* AppDelegate+AppAppearance.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		388C3C8126BEEBEC008BF853 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C7E26BEEA19008BF853 /* StationListView.swift */,
+				388C3C2926BEA4E9008BF853 /* StationListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		388C3C8226BEEC03008BF853 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C3526BEA547008BF853 /* StationListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		388C3C8326BEEC3C008BF853 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C8526BEECAE008BF853 /* StationListTableViewCell.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		388C3C8A26BEFBA7008BF853 /* Main Flow */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C8B26BEFC23008BF853 /* StationDetails */,
+				388C3C2826BEA345008BF853 /* Station List */,
+			);
+			path = "Main Flow";
+			sourceTree = "<group>";
+		};
+		388C3C8B26BEFC23008BF853 /* StationDetails */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C9426BEFEBF008BF853 /* ViewModel */,
+				388C3C8C26BEFC63008BF853 /* View */,
+			);
+			path = StationDetails;
+			sourceTree = "<group>";
+		};
+		388C3C8C26BEFC63008BF853 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C8D26BEFC7B008BF853 /* StationDetailsView.swift */,
+				388C3C9126BEFCBD008BF853 /* StationDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		388C3C9426BEFEBF008BF853 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				388C3C9626BEFFDE008BF853 /* StationDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		630F5C765DAB7B3C2A292D34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B473DF89A10A59935FB50D4 /* Pods_Smog_test.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 388C3BE526BE7355008BF853 /* Build configuration list for PBXNativeTarget "Smog test" */;
 			buildPhases = (
+				475F6D5E958787AA82C3EF98 /* [CP] Check Pods Manifest.lock */,
 				388C3BCD26BE7355008BF853 /* Sources */,
 				388C3BCE26BE7355008BF853 /* Frameworks */,
 				388C3BCF26BE7355008BF853 /* Resources */,
+				B0A8D90FF091E2B6C44B5095 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,34 +331,85 @@
 			files = (
 				388C3BE126BE7355008BF853 /* LaunchScreen.storyboard in Resources */,
 				388C3BDE26BE7355008BF853 /* Assets.xcassets in Resources */,
-				388C3BDC26BE7355008BF853 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		475F6D5E958787AA82C3EF98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smog test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0A8D90FF091E2B6C44B5095 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smog test/Pods-Smog test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Smog test/Pods-Smog test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Smog test/Pods-Smog test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		388C3BCD26BE7355008BF853 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				388C3BD926BE7355008BF853 /* ViewController.swift in Sources */,
+				388C3BEB26BE7441008BF853 /* AppCoordinator.swift in Sources */,
+				388C3C8626BEECAE008BF853 /* StationListTableViewCell.swift in Sources */,
+				388C3C7226BEC01B008BF853 /* AppDelegate+AppAppearance.swift in Sources */,
+				388C3C2326BE8126008BF853 /* MeasuringStation.swift in Sources */,
+				388C3C1926BE7AC9008BF853 /* UserRepository.swift in Sources */,
+				388C3BF326BE7696008BF853 /* Coordinator.swift in Sources */,
+				388C3C2626BE85D7008BF853 /* UserApi.swift in Sources */,
+				388C3C0F26BE78EE008BF853 /* RequestManger.swift in Sources */,
+				388C3C9726BEFFDE008BF853 /* StationDetailsViewModel.swift in Sources */,
+				388C3C1226BE7944008BF853 /* SmogError.swift in Sources */,
+				388C3C0B26BE78B0008BF853 /* Configuration.swift in Sources */,
+				388C3C7F26BEEA19008BF853 /* StationListView.swift in Sources */,
+				388C3C8E26BEFC7B008BF853 /* StationDetailsView.swift in Sources */,
+				388C3C9A26BF010F008BF853 /* AirQuality.swift in Sources */,
 				388C3BD526BE7355008BF853 /* AppDelegate.swift in Sources */,
-				388C3BD726BE7355008BF853 /* SceneDelegate.swift in Sources */,
+				388C3C9226BEFCBD008BF853 /* StationDetailsViewController.swift in Sources */,
+				388C3BF726BE76BC008BF853 /* Router.swift in Sources */,
+				388C3C2A26BEA4E9008BF853 /* StationListViewController.swift in Sources */,
+				388C3BFD26BE772E008BF853 /* UIExecutableAlertAction.swift in Sources */,
+				388C3BFA26BE76DF008BF853 /* Presentable.swift in Sources */,
+				388C3C3626BEA547008BF853 /* StationListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		388C3BDA26BE7355008BF853 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				388C3BDB26BE7355008BF853 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		388C3BDF26BE7355008BF853 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +539,7 @@
 		};
 		388C3BE626BE7355008BF853 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A015C26CD8EB47ACB054CE /* Pods-Smog test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +559,7 @@
 		};
 		388C3BE726BE7355008BF853 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AC9B69ADDD9E32E10285275 /* Pods-Smog test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
